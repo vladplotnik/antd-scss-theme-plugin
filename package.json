@@ -1,7 +1,7 @@
 {
-  "name": "antd-scss-theme-plugin",
+  "name": "ipsm-scss-theme-plugin",
   "description": "A Webpack plugin for customizing Ant Design with SCSS.",
-  "version": "1.0.7",
+  "version": "1.0.17",
   "main": "build/dist/lib/index.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production babel src --out-dir build/dist/lib",
@@ -35,17 +35,17 @@
     "build/dist"
   ],
   "dependencies": {
-    "less": "^2.3.7",
+    "less": "^3.9.0",
     "loader-utils": "^1.1.0",
     "scss-to-json": "^2.0.0"
   },
   "peerDependencies": {
-    "antd": "^3.2.0",
-    "less-loader": "^4.0.5",
-    "sass-loader": "^6.0.6"
+    "antd": "^3.16.3",
+    "less-loader": "^5.0.0",
+    "sass-loader": "^7.1.0"
   },
   "devDependencies": {
-    "antd": "^3.2.0",
+    "antd": "^3.16.3",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.1",
@@ -61,13 +61,16 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.6.1",
     "jest": "^22.2.1",
-    "less": "^2.3.7",
-    "less-loader": "^4.0.5",
-    "node-sass": "^4.7.2",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
+    "node-sass": "^4.12.0",
     "raw-loader": "^0.5.1",
     "rimraf": "^2.6.2",
-    "sass-loader": "^6.0.7",
+    "sass-loader": "^7.1.0",
     "webpack": "^3.10.0",
     "webpack-node-externals": "^1.6.0"
+  },
+  "publishConfig": {
+    "registry": "http://npm.brandstock.com"
   }
 }
